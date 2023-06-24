@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".RegisterActivity">
+    <RelativeLayout
+        android:id="@+id/r13"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:layout_alignParentTop="true">
+        <ImageView
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/back1"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="@color/lightblack"
+            android:textSize="21dp"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+
+
+            />
+
+    </RelativeLayout>
+
+<TextView
+    android:id="@+id/regg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Register Account "
+android:layout_marginTop="140dp"
+    android:layout_centerHorizontal="true"
+    android:textColor="@color/black"
+    android:textColorHint="@color/purple_200"
+    android:textSize="30dp"
+    />
+
+    <TextView
+        android:id="@+id/regg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="complete your details or continue with social media"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/lightblack"
+        android:layout_below="@+id/regg"
+        android:textColorHint="@color/purple_200"
+        android:textSize="15sp"
+        />
+    <RelativeLayout
+        android:id="@+id/r8"
+android:layout_marginBottom="50dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linee"
+
+        >
+    <EditText
+        android:id="@+id/register_email_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/input_design"
+        android:padding="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="90dp"
+        android:drawableRight="@drawable/email"
+        android:hint="Enter your email"
+        android:inputType="text"
+        android:textColor="@color/purple_200"
+        android:textColorHint="@color/lightblack"
+        android:textSize="19sp"
+        />
+    <EditText
+        android:id="@+id/register_phone_number_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_email_input"
+        android:background="@drawable/input_design"
+        android:padding="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:drawableRight="@drawable/phone"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:textColor="@color/purple_200"
+        android:textColorHint="@color/lightblack"
+        android:textSize="19sp"
+        android:layout_marginTop="6dp"
+        />
+
+
+
+    <EditText
+        android:id="@+id/register_username_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_phone_number_input"
+        android:background="@drawable/input_design"
+        android:padding="20dp"
+        android:layout_marginLeft="15dp"
+        android:drawableRight="@drawable/name"
+        android:layout_marginRight="15dp"
+        android:hint="Name"
+        android:inputType="text"
+        android:textColor="@color/purple_200"
+        android:textColorHint="@color/lightblack"
+        android:textSize="19sp"
+       android:layout_marginTop="6dp"
+        />
+
+
+
+
+    <EditText
+        android:id="@+id/register_password_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_username_input"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/input_design"
+        android:hint="Password"
+        android:drawableRight="@drawable/password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="@color/purple_200"
+        android:textColorHint="@color/lightblack"
+        android:textSize="19sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/register_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_password_input"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button"
+            android:padding="17dp"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:text="Create Account"
+            android:textColor="@android:color/white"
+            />
+    </RelativeLayout>
+<!--    19sp<EditText-->
+<!--        android:id="@+id/register_email"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/register_password_input"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:layout_marginTop="6dp"-->
+<!--        android:layout_marginRight="15dp"-->
+<!--        android:background="@drawable/input_design"-->
+<!--        android:hint="Email"-->
+<!--        android:inputType="number"-->
+<!--        android:padding="20dp"-->
+<!--        android:textColor="@color/purple_200"-->
+<!--        android:textColorHint="@color/purple_200"-->
+<!--        android:textSize="19sp" />-->
+<!--    <Button-->
+<!--        android:id="@+id/getotp_btn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/register_email"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:layout_marginRight="15dp"-->
+<!--        android:background="@drawable/button"-->
+<!--        android:padding="17dp"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textSize="18sp"-->
+<!--        android:text="Send mail"-->
+<!--        android:onClick="onEmailClick"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/verify_btn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/getotp_btn"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:layout_marginRight="15dp"-->
+<!--        android:background="@drawable/button"-->
+<!--        android:padding="17dp"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textSize="18sp"-->
+<!--        android:text="Verify"-->
+<!--        android:onClick="onSignInClickedButton"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        />-->
+
+<View
+    android:id="@+id/linee"
+android:layout_alignParentBottom="true"
+    android:layout_width="fill_parent"
+    android:layout_height="1dp"
+    />
+
+</RelativeLayout>

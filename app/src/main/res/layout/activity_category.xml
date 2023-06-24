@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".CategoryActivity">
+    <LinearLayout
+        android:id="@+id/linear1_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+         android:layout_marginTop="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/t_shirts"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+ android:layout_margin="5dp"
+            android:padding="10dp"
+            android:src="@drawable/tshirts"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/jacket"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:src="@drawable/jacket"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/boyswear"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:src="@drawable/boyswear"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linear2_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="45dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/girlswear"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/girlswear"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/tops"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="12dp"
+
+            android:src="@drawable/tops"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/glasses"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/glasses"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linear3_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="45dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/earbuds"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/earbuds"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/watch"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="12dp"
+
+            android:src="@drawable/watch"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/shoes"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/shoes"
+            />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categories"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

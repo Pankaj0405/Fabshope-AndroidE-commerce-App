@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Admin.AdminCategoryActivity">
+
+    <TextView
+        android:id="@+id/slogan_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Add New Product"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/linear1_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/t_shirts"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/tshirts"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/jacket"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="12dp"
+
+            android:src="@drawable/jacket"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/boyswear"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/boyswear"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linear2_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="45dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/girlswear"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/girlswear"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/tops"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="12dp"
+
+            android:src="@drawable/tops"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/glasses"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/glasses"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linear3_category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear2_category_layout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="45dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/earbuds"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/earbuds"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/watch"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="12dp"
+
+            android:src="@drawable/watch"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/shoes"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/shoes"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/maintain_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_above="@+id/check_orders_btn"
+        android:background="@color/purple_200"
+        android:text="Maintain Products"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <Button
+        android:id="@+id/check_orders_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_above="@+id/admin_logout_btn"
+        android:background="@color/purple_200"
+        android:text="Check New Orders"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp"
+
+
+        />
+    <Button
+        android:id="@+id/admin_logout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/purple_200"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+
+
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity">
+    <com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/app_bar_settings"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/purple_200">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:src="@drawable/backbutton"
+                />
+            <TextView
+                android:id="@+id/cart"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+
+android:layout_toRightOf="@+id/backbutton"
+
+                android:text="Cart"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+
+                />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:id="@+id/scrollableContents"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/app_bar_settings"
+        android:layout_above="@+id/r12"
+        >
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lightblack2"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cart_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:scrollbars="vertical"
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <RelativeLayout
+                android:id="@+id/rl11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cart_list"
+                android:padding="12dp"
+                android:visibility="visible"
+                android:layout_marginTop="5dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/price_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Price Details"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/priceeee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/price_details"
+android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Total Product Price"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/page_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/price_details"
+                    android:layout_alignParentRight="true"
+
+                    android:layout_marginTop="10dp"
+                    android:text="Total Price="
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/Deliveryfee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/priceeee"
+                    android:layout_marginTop="10dp"
+                    android:text="Delivery Fee"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:layout_alignParentLeft="true"
+
+                    />
+
+                <TextView
+                    android:id="@+id/oo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+android:layout_alignParentRight="true"
+                    android:text="Rs 0"
+
+                    android:layout_below="@+id/page_title"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+
+                    />
+
+            </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/msg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_200"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:text="Congrotulation, your final order has been place sucessfully,Soon it willl be verified"
+        android:textSize="20dp"
+        android:visibility="gone"
+
+        />
+            <RelativeLayout
+                android:id="@+id/r14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl11"
+                android:layout_marginTop="5dp"
+                android:visibility="visible"
+                android:background="@color/white"
+                android:layout_marginBottom="5dp"
+
+                android:padding="7dp"
+                >
+                <TextView
+                    android:id="@+id/ordertotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:text="Order Total"
+
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+
+                    />
+                <TextView
+                    android:id="@+id/ordertotal1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:text="Order Total"
+
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+
+                    />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+    <TextView
+        android:id="@+id/cartempty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Your cart is empty"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/viewproducts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="12dp"
+        android:visibility="invisible"
+        android:layout_below="@+id/cartempty"
+        android:background="@drawable/input_design"
+        android:text="View Products"
+        android:padding="10dp"
+        android:textColor="@color/purple_200"
+        android:textSize="12dp"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/r12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="2dp"
+        >
+        <TextView
+            android:id="@+id/ordertotal2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:text="Order Total"
+android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+
+            />
+        <TextView
+            android:id="@+id/ordertotal3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_alignParentLeft="true"
+            android:text="Price Details"
+android:layout_below="@+id/ordertotal2"
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next_process_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:background="@color/purple_200"
+            android:text="Continue"
+            android:padding="4dp"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

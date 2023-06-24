@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "713006457951",
+    "project_id": "fabshope-a2695",
+    "storage_bucket": "fabshope-a2695.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:713006457951:android:c5874856b222dac8ea27ea",
+        "android_client_info": {
+          "package_name": "ucs.tech.fabshope"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "713006457951-vi26la0d7gf6ist8e4u88lnaqkkg0jke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBy0JAzZmUA7_3OEkj7kpxEGH0jKPkElCw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "713006457951-vi26la0d7gf6ist8e4u88lnaqkkg0jke.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
